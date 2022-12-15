@@ -11,8 +11,8 @@ import org.springframework.beans.factory.annotation.Value;
 @RestController
 public class DemoApplication {
 
-	@Value( "${YoSetting}" )
-	private static String prop;
+	@Value("${YoSetting}")
+	private String prop;
 	
 	public static void main(String[] args) {
 		SpringApplication.run(DemoApplication.class, args);
